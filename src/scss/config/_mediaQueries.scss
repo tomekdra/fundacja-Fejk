@@ -1,0 +1,54 @@
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+  }
+
+  .navBar {
+    height: $nav-height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    ul {
+      display: flex;
+      height: $nav-height;
+      li {
+        color: $text-color;
+        margin: 0 20px;
+
+        &:hover {
+          border-bottom: $border-bottom;
+        }
+      }
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 6px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        outline: none;
+
+        &:link,
+        &:visited {
+          color: $text-color;
+        }
+
+        &:hover {
+          text-shadow: $shadow-text;
+        }
+      }
+    }
+  }
+
+  .header-big-image {
+    height: calc(100vh - 100px);
+    background: url("../../images/big-logo.jpg") no-repeat top/cover;
+    background-color: $color-second;
+  }
+
+}

@@ -1,5 +1,12 @@
 @import "config/reset";
 @import "config/variables";
+@import "config/mixins";
 @import "config/fonts";
+@import "config/grid";
+
+@import "elements/buttons";
 
 @import "../components/NavBar/navBar";
+@import "../components/Header/header";
+
+@import "config/mediaQueries";

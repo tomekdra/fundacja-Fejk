@@ -1,11 +1,17 @@
-.navBar {
-  height: $nav-height;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.head-wrapper {
   width: 100%;
   background-image: linear-gradient(45deg, $color-main, $color-second);
   box-shadow: $shadow-box;
 }
 
+.head-menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+
+.active {
+  border-bottom: $border-bottom;
+}

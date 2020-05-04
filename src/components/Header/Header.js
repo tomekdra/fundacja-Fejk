@@ -2,7 +2,8 @@ import React from "react";
 
 const Header = () => {
     return (
-        <h1>Logo</h1>
+        <div className="header-big-image">
+        </div>
     )
 
 }

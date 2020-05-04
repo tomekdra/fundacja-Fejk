@@ -1,0 +1,19 @@
+.btn-support {
+  font-family: $font-main;
+  font-size: 15px;
+  text-decoration: none;
+  background: $button-give;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  width: 250px;
+  text-align: center;
+
+  &:hover {
+    background: darken($button-give, 10%);
+    box-shadow: $shadow-box;
+  }
+}
