@@ -42,7 +42,7 @@ const MutipleSlidesPerView = () => {
     }
     return (
 
-        <Swiper {...params} style={{margin: '0 auto'}}>
+        <Swiper {...params}>
             <div className="swiper-slide">
                 <div className="card">
                     <img src={smallLogo} alt="Fundacja Fejk"/>
