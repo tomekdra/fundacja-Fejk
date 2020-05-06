@@ -3,7 +3,7 @@ import img from '../../images/depresja-dzieci-712x515.jpg'
 
 const AboutUs = () => {
     return (
-        <section className="aboutus-wrapper">
+        <section className="aboutus-wrapper" id={"aboutus"}>
             <div className="container">
                 <div className="section-third-content">
                     <div className="section-text">
