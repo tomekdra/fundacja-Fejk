@@ -8,5 +8,13 @@
 
 @import "../components/NavBar/navBar";
 @import "../components/Header/header";
+@import "../components/Swiper/slide";
+@import "../components/Footer/footer";
+
 
 @import "config/mediaQueries";
+
+
+body {
+  background: url("../images/gravel.png");
+}

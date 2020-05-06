@@ -1,6 +1,6 @@
 @media screen and (min-width: 1000px) {
   .container {
-    width: 1000px;
+    width: 1100px;
   }
 
   .navBar {
@@ -13,6 +13,7 @@
     ul {
       display: flex;
       height: $nav-height;
+
       li {
         color: $text-color;
         margin: 0 20px;
@@ -46,9 +47,20 @@
   }
 
   .header-big-image {
-    height: calc(100vh - 100px);
-    background: url("../../images/big-logo.jpg") no-repeat top/cover;
-    background-color: $color-second;
+    background-color: $gradient-page;
   }
+
+  .menu {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0 20px;
+  }
+
 
 }

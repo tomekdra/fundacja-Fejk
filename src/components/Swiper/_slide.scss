@@ -1,0 +1,23 @@
+.card {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  padding: 20px 20px 60px 20px;
+  background-image: linear-gradient($color-main, $color-second);
+  text-align: center;
+  box-shadow: $shadow-box;
+
+  img {
+    height: 100px;
+    filter: invert(100%);
+  }
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  min-width: 300px;
+}

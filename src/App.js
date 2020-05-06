@@ -7,6 +7,7 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Header from "./components/Header/Header";
 import SupportUs from "./components/SupportUs/SupportUs";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
              <Route path="/kontakt" component={ContactUs} />
              <Route component={PageNotFound} />
          </Switch>
+             <Footer />
          </>
      </HashRouter>
   );

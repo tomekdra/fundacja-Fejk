@@ -1,8 +1,9 @@
 import React from "react";
+import MutipleSlidesPerView from "./Swiper/Swiper";
 
 const Home = () => {
     return (
-        <h1>Hello World Home</h1>
+        <MutipleSlidesPerView />
     )
 }
 

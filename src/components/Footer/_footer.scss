@@ -1,0 +1,35 @@
+footer {
+  min-height: 200px;
+  width: 100%;
+  margin: 20px auto;
+  box-shadow: $shadow-box;
+  background-image: linear-gradient(45deg, $color-main, $color-second);
+  padding: 10px;
+
+
+  img {
+    filter: invert(100%);
+    height: $nav-height;
+    padding: 10px;
+  }
+
+
+  .footer-list-item {
+    padding: 10px;
+  }
+
+  p {
+    line-height: 1.7;
+    font-size: 0.8rem;
+  }
+
+}
+
+.copyright {
+  text-align: center;
+}
+
+.menu {
+  display: none;
+}
+
