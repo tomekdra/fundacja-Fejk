@@ -1,5 +1,7 @@
 import React from "react";
 import NavBarItems from "../NavBar/NavBarItems";
+import Copyright from "./Copyright";
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -35,13 +37,13 @@ const Footer = () => {
                 <p>NIP: 9542812756</p>
                 <p>REGON: 38561517</p>
                 <div className="social-icons">
-                    <a href="https://www.facebook.com/depresjaudzieciimlodziezy/" target="_blank"><i
-                        className="icon-facebook"></i></a>
-                    <a href=""><i className="icon-gplus"></i></a>
-                    <a href=""><i className="icon-twitter"></i></a>
+                    <Link to="https://www.facebook.com/depresjaudzieciimlodziezy/" target="_blank"><i className="icon-facebook"></i></Link>
+                    <Link to=""><i className="icon-gplus"></i></Link>
+                    <Link to=""><i className="icon-twitter"></i></Link>
                 </div>
             </div>
         </div>
+            <Copyright />
 </footer>
 )
 

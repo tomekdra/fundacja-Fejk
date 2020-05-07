@@ -8,7 +8,7 @@ const AboutUs = () => {
                 <div className="section-third-content">
                     <div className="section-text">
                         <h3>O nas</h3>
-                        <img src={img} />
+                        <img src={img} alt={"Alone"}/>
 
                             <p>Fundacja Fejk -nazwa pochodzi ze spolszczonego słowa
                                 „fake”, co w tłumaczeniu oznacza falsyfikację imitację.

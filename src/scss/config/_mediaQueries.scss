@@ -56,7 +56,6 @@
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       grid-gap: 0 20px;
-      width: $width-page;
     }
 
 
@@ -70,5 +69,6 @@
       grid-column: span 2 / 12;
     }
   }
+
 
 }
