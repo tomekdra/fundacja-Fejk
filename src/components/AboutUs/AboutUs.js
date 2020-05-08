@@ -5,7 +5,6 @@ const AboutUs = () => {
     return (
         <section className="aboutus-wrapper" id={"aboutus"}>
             <div className="container">
-                <div className="section-third-content">
                     <div className="section-text">
                         <h3>O nas</h3>
                         <img src={img} alt={"Alone"}/>
@@ -33,9 +32,6 @@ const AboutUs = () => {
                                 doświadczania nowych rzeczy… Obserwujmy nasze dzieci.
                                 Nie każmy im „wziąć się w garść” </p>
                     </div>
-
-
-                </div>
             </div>
         </section>
     )

@@ -8,8 +8,8 @@ const NavBarItems = ({classItem}) => {
         <ul>
             <li className={classItem}><NavLink exact to="/">Strona główna</NavLink></li>
             <li className={classItem}><NavLink smooth to="/o-nas#aboutus">O nas</NavLink></li>
-            <li className={classItem}><NavLink to="/wsparcie">Wsparcie</NavLink></li>
-            <li className={classItem}><NavLink to="/kontakt">Kontakt</NavLink></li>
+            <li className={classItem}><NavLink smooth to="/wsparcie#supportus">Wsparcie</NavLink></li>
+            <li className={classItem}><NavLink smooth to="/kontakt#contactus">Kontakt</NavLink></li>
         </ul>
     )
 }
