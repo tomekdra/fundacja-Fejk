@@ -5,3 +5,11 @@
   background-image: linear-gradient(45deg, $color-main, $color-second);
   padding: 10px 10px 30px 10px;
 }
+
+@mixin inputs {
+  background: none;
+  border: none;
+  border-bottom: 1px solid $color-second;
+  border-left: 1px solid $color-second;
+  color: $text-color;
+}

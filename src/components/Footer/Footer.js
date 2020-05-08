@@ -4,6 +4,8 @@ import Copyright from "./Copyright";
 import {Link} from "react-router-dom";
 
 const Footer = () => {
+
+
     return (
         <footer>
             <div className={"container"}>

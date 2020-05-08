@@ -1,0 +1,14 @@
+.error {
+  color: red;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.error-input {
+ background: rgba(255, 0, 0, .3);
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid $color-second;
+  border-left: 1px solid $color-second;
+  color: $text-color;
+}
