@@ -2,6 +2,7 @@ import React from 'react';
 import Swiper from 'react-id-swiper';
 import 'swiper/swiper.scss';
 import smallLogo from '../../images/fejk.png'
+import {NavHashLink as NavLink} from "react-router-hash-link";
 
 const MutipleSlidesPerView = () => {
     const params = {
@@ -46,11 +47,21 @@ const MutipleSlidesPerView = () => {
             <div className="swiper-slide">
                 <div className="card">
                     <img src={smallLogo} alt="Fundacja Fejk"/>
-                    <h2>O nas</h2>
+                    <h2>O depresji</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Assumenda cumque exercitationem magni, maiores
                         natus repellat.</p>
-                    <a href="?f=ONas" className="button-see">ZOBACZ</a>
+                    <NavLink smooth to={"/o-depresji"} className={"button-see"}>ZOBACZ</NavLink>
+                </div>
+            </div>
+            <div className="swiper-slide">
+                <div className="card">
+                    <img src={smallLogo} alt="Fundacja Fejk"/>
+                    <h2>O depresji</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Assumenda cumque exercitationem magni, maiores
+                        natus repellat.</p>
+                    <NavLink smooth to={"/o-depresji"} className={"button-see"}>ZOBACZ</NavLink>
                 </div>
             </div>
             <div className="swiper-slide">
@@ -60,7 +71,7 @@ const MutipleSlidesPerView = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Assumenda cumque exercitationem magni, maiores
                         natus repellat.</p>
-                    <a href="?f=ONas" className="button-see">ZOBACZ</a>
+                    <NavLink smooth to={"/o-nas"} className={"button-see"}>ZOBACZ</NavLink>
                 </div>
             </div>
             <div className="swiper-slide">
@@ -70,7 +81,7 @@ const MutipleSlidesPerView = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Assumenda cumque exercitationem magni, maiores
                         natus repellat.</p>
-                    <a href="?f=ONas" className="button-see">ZOBACZ</a>
+                    <NavLink smooth to={"/o-depresji#aboutdepression"} className={"button-see"}>ZOBACZ</NavLink>
                 </div>
             </div>
             <div className="swiper-slide">
@@ -80,17 +91,7 @@ const MutipleSlidesPerView = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Assumenda cumque exercitationem magni, maiores
                         natus repellat.</p>
-                    <a href="?f=ONas" className="button-see">ZOBACZ</a>
-                </div>
-            </div>
-            <div className="swiper-slide">
-                <div className="card">
-                    <img src={smallLogo} alt="Fundacja Fejk"/>
-                    <h2>O nas</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Assumenda cumque exercitationem magni, maiores
-                        natus repellat.</p>
-                    <a href="?f=ONas" className="button-see">ZOBACZ</a>
+                    <NavLink smooth to={"/o-depresji#aboutdepression"} className={"button-see"}>ZOBACZ</NavLink>
                 </div>
             </div>
             <div className="swiper-pagination"></div>

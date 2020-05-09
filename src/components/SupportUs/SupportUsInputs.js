@@ -20,7 +20,7 @@ const SupportUsInputs = () => {
 
         if(!values.tel) {
             errors.tel = "Podaj nr telefonu";
-        } else if (toString(values.tel).length < 9) {
+        } else if (values.tel.toString().length < 9) {
             errors.tel = "Nr telefonu musi zawierciać 9 cyfr"
         }
 
@@ -41,7 +41,6 @@ const SupportUsInputs = () => {
             console.log(JSON.stringify(values, null, 2))
         },
     });
-
 
     return (
 
@@ -88,7 +87,7 @@ const SupportUsInputs = () => {
                 onChange={formik.handleChange}
                 value={formik.values.message}
             />
-            <button type={"submit"} className={"btn-submit"}>Submit</button>
+            <button type={"submit"} className={"btn-submit"}>Wyślij</button>
         </form>
 
     )

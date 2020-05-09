@@ -1,0 +1,11 @@
+.aboutdepression-wrapper {
+  @include content;
+}
+
+.aboutdepression-statistic {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+}

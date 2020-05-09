@@ -8,6 +8,7 @@ import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Header from "./components/Header/Header";
 import SupportUs from "./components/SupportUs/SupportUs";
 import Footer from "./components/Footer/Footer";
+import AboutDepression from "./components/AboutDepression/AboutDepression";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
              <Route path="/o-nas" component={AboutUs} />
              <Route path="/wsparcie" component={SupportUs} />
              <Route path="/kontakt" component={ContactUs} />
+             <Route path="/o-depresji" component={AboutDepression} />
              <Route component={PageNotFound} />
          </Switch>
              <Footer />
