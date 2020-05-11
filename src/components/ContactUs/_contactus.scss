@@ -1,0 +1,45 @@
+.contactus-wrapper {
+  @include content;
+}
+
+.contactus-form-container {
+  width: 200%;
+}
+
+.contactus-form {
+  display: flex;
+  flex-direction: column;
+
+
+  label {
+    margin: 10px;
+  }
+
+  .input {
+    padding: 5px;
+    @include inputs;
+
+    &:focus {
+      background: none;
+    }
+  }
+
+  textarea {
+    width: 100%;
+    min-height: 80px;
+    font-size: 20px;
+    @include inputs;
+  }
+}
+
+.contactus-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .contactus-fejk-logo {
+    filter: invert(100%);
+    width: 250px;
+    float: left;
+    padding: 20px;
+  }

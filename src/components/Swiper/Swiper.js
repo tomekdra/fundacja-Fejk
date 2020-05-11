@@ -1,12 +1,19 @@
 import React from 'react';
 import Swiper from 'react-id-swiper';
-import 'swiper/swiper.scss';
+import 'swiper/css/swiper.css';
 import smallLogo from '../../images/fejk.png'
 import {NavHashLink as NavLink} from "react-router-hash-link";
 
 const MutipleSlidesPerView = () => {
     const params = {
-
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
@@ -17,10 +24,6 @@ const MutipleSlidesPerView = () => {
             depth: 50,
             modifier: 1,
             slideShadows: false,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
         },
         slidesPerView: 1,
         initialSlide: 2,
@@ -35,14 +38,13 @@ const MutipleSlidesPerView = () => {
                 spaceBetween: 10,
             },
             1200: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 20,
             },
 
         }
     }
     return (
-
         <Swiper {...params}>
             <div className="swiper-slide">
                 <div className="card">
@@ -94,7 +96,6 @@ const MutipleSlidesPerView = () => {
                     <NavLink smooth to={"/o-depresji#aboutdepression"} className={"button-see"}>ZOBACZ</NavLink>
                 </div>
             </div>
-            <div className="swiper-pagination"></div>
         </Swiper>
 
     )

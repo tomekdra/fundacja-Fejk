@@ -2,20 +2,3 @@
   @include content;
 }
 
-.section-text {
-  p {
-  margin: 20px 0;
-  }
-
-  img {
-    float: left;
-    margin: 20px;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow: $shadow-box;
-  }
-}
-
-.section-img {
-  float: left;
-}

@@ -12,6 +12,7 @@
 @import "../components/Swiper/slide";
 @import "../components/AboutUs/aboutus";
 @import "../components/SupportUs/supportus";
+@import "../components/ContactUs/contactus";
 @import "../components/AboutDepression/aboutdepression";
 @import "../components/Footer/footer";
 
@@ -34,4 +35,23 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   -webkit-text-fill-color: $text-color;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+.section-text {
+  min-height: 300px;
+  p {
+    margin: 20px 0;
+  }
+
+  img {
+    float: left;
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: $shadow-box;
+  }
+}
+
+.section-img {
+  float: left;
 }
