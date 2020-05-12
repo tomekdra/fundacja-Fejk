@@ -2,10 +2,14 @@
   @include content;
 }
 
-.aboutdepression-statistic {
+.section-text {
+
+  .aboutdepression-statistic {
     display: flex;
     justify-content: center;
     img {
-      width: 80%;
-    }
+        width: 80%;
+      }
+
+  }
 }
