@@ -24,6 +24,10 @@ const SupportUsInputs = () => {
             errors.tel = "Nr telefonu musi zawierciać 9 cyfr"
         }
 
+        if (!values.message || values.message.length < 10) {
+            errors.message = "Napisz kilka zdań";
+        }
+
         return errors;
 
     }
@@ -80,12 +84,13 @@ const SupportUsInputs = () => {
                 onChange={formik.handleChange}
                 value={formik.values.birth}
             />
-            <label htmlFor={"message"}>Dlaczego pragniesz zostać wolontariuszem w naszej fundacji?</label>
+            <label htmlFor={"message"}>{formik.errors.message ? <div className={"error"}>{formik.errors.message}</div> : "Dlaczego pragniesz zostać wolontariuszem w naszej fundacji?"}</label>
             <textarea
                 id="message"
                 name="message"
                 onChange={formik.handleChange}
                 value={formik.values.message}
+                className={formik.errors.message ? "error-input" : "textarea"}
             />
             <button type={"submit"} className={"btn-submit"}>Wyślij</button>
         </form>

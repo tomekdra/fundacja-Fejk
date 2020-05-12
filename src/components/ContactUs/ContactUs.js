@@ -6,13 +6,17 @@ const ContactUs = () => {
     return (
         <section className="contactus-wrapper" id={"contactus"}>
             <div className="container">
+
+                <h3>Kontakt</h3>
+
                 <div className={"contactus-container"}>
-                    <h3>Kontakt</h3>
+
                     <img src={img} className={"contactus-fejk-logo"} alt={"Fejk logo"}/>
 
-                    <p>Masz jakieś pytania? Potrzebujesz pomocy? Napisz do nas: </p>
+
                     <div className="contactus-form-container">
-                        <ContactUsInputs />
+                        <p>Masz jakieś pytania? Potrzebujesz pomocy? Napisz do nas: </p>
+                        <ContactUsInputs/>
                     </div>
                 </div>
             </div>
