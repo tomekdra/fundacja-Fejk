@@ -9,16 +9,16 @@ const ContactUs = () => {
 
                 <h3>Kontakt</h3>
 
-                <div className={"contactus-container"}>
+                <div className={"contactus-text"}>
 
                     <img src={img} className={"contactus-fejk-logo"} alt={"Fejk logo"}/>
 
-
+                </div>
                     <div className="contactus-form-container">
                         <p>Masz jakieś pytania? Potrzebujesz pomocy? Napisz do nas: </p>
                         <ContactUsInputs/>
                     </div>
-                </div>
+
             </div>
         </section>
     )

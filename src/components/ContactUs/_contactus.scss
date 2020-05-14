@@ -1,45 +1,28 @@
 .contactus-wrapper {
   @include content;
-}
 
-.contactus-form-container {
-  width: 200%;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    .contactus-text {
+      grid-column: 1/1;
+      margin: 0 auto;
+
+    }
+
+  }
 }
 
 .contactus-form {
   display: flex;
   flex-direction: column;
-
-
-  label {
-    margin: 10px;
-  }
-
-  .input {
-    padding: 5px;
-    @include inputs;
-
-    &:focus {
-      background: none;
-    }
-  }
-
-  textarea {
-    width: 100%;
-    min-height: 80px;
-    font-size: 20px;
-    @include inputs;
-  }
 }
 
-.contactus-container {
-  display: flex;
-}
 
-  .contactus-fejk-logo {
-    filter: invert(100%);
-    width: 250px;
-    height: 100%;
-    float: left;
-    padding: 40px;
-  }
+.contactus-fejk-logo {
+  filter: invert(100%);
+  width: 250px;
+  padding: 40px;
+}

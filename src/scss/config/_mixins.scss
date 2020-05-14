@@ -6,10 +6,31 @@
   padding: 10px 10px 30px 10px;
 }
 
-@mixin inputs {
+%inputs {
   background: none;
   border: none;
   border-bottom: 1px solid $color-second;
   border-left: 1px solid $color-second;
   color: $text-color;
+
+}
+
+label {
+  margin: 10px;
+}
+
+.input {
+  padding: 5px;
+  @extend %inputs;
+
+  &:focus {
+    background: none;
+  }
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  font-size: 1rem;
+  @extend %inputs;
 }
